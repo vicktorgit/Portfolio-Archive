@@ -1,0 +1,966 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    border:none;
+    outline:none;
+    text-decoration: none; 
+    font-family: fantasy;  
+    scroll-behavior: smooth;     
+    }
+:root{
+--rg1:#62D0A0;
+--rg2:#221660;
+--rg3:#FFD700;
+--rg4:#FFFF;
+--rg4:#E8E9EB;
+
+  } 
+
+    header{
+    position:fixed;
+    top:10;
+    left:0;
+    width:100%;
+    background: #221660;
+    display:flex;
+    justify-content: space-around;
+    height:5rem;
+    align-items: center;
+    z-index:100;
+    }
+  
+
+    #logo{
+    color:#FFFF;
+    font-size:3rem;
+    margin-left:-4rem;
+    cursor:pointer;
+    }
+    span{
+        color:#62D0A0
+    }
+
+    #menu-icon{
+        font-size: 3.6rem;
+        color:white;
+        display: none;
+    } 
+
+
+    .nav a{
+        background:#221660;
+        color:white;
+        font-size:1.5rem;
+        font-size:1.5rem;
+        margin:1rem;
+        cursor:pointer;
+        transition: 1s  ease; 
+       
+    }
+   
+    .nav a:hover,
+    .nav  a.home{
+    font-weight: 900;
+    text-transform: uppercase;
+    color:#62D0A0;   
+    font-size: 1.7rem;
+    text-decoration:underline;
+    text-decoration-color: cadetblue;  
+    }
+    .nav .apart{
+        display:inline-flex;
+        margin-left:8rem;
+    }
+
+    .apart button{
+        background-color:transparent;
+        border-radius:0;
+        padding:12px;
+        border:1px solid #FFFF;
+        color:#FFFF;
+    }
+    .apart button:hover{
+        background: #62D0A0;
+        cursor: pointer;
+    }
+
+   .hom{
+    width:100%; 
+    min-height:120vh;
+    background: url(../Portfolio/Image:port/pexels-pixabay-255527.jpg) no-repeat;
+    background-size:100%;
+   
+    }
+   .content{
+    padding:8rem 9% 2rem; 
+    display: flex;
+    justify-content: center;
+    text-align: center; 
+   }
+
+   .user{ 
+    margin-left: 5rem;    
+   } 
+
+   .search-bar{
+    border:1px solid #221660;
+    background:transparent;
+    border-radius:10rem;
+    width:30%;
+    height:70px;
+   }
+   .search-bar input{
+    background: transparent;
+    font-family: serif;
+    padding:1rem 0 1rem 1.8rem;
+    margin-right:60px;
+    margin-left:-60px;
+    border-radius: 3rem;
+    outline: none;
+   }
+    ::placeholder{
+        color:black;
+    }
+    .search-bar button{
+        background:transparent;
+        border-radius:100px;
+        cursor: pointer;
+    }
+     #im{
+        width:30px;
+        margin-top:20px;
+        transition: 3s ease;
+    }
+    html{
+        font-size:82.5%;
+        overflow-x: hidden;
+    }
+    .ad{
+        padding:8rem 9% 2rem; 
+        
+  
+    }
+    .ad h1{
+        color:#62D0A0;
+        text-transform: uppercase;
+        letter-spacing:0.8rem;
+        margin-bottom:2rem;
+    } 
+    .ad h2{
+        color:#221660;
+        margin-bottom:2rem;
+        line-height:30px; 
+    }
+
+
+    .ad button{
+     margin-right:30px;
+     padding:0.7rem;    
+     background:black;
+     color:white;
+     border-radius:20px;
+
+    }
+    .ad button:hover{
+        cursor: pointer;
+        
+     }
+  .sep {
+    display: flex;
+  }
+  /* button .xl{
+      /* padding-top:3rem; */
+  } */
+
+ .app i{
+    color:white;
+    height:50px;
+}
+#new{
+    width:500px;
+    border-radius: 200px;
+    display: none;
+}
+  
+.about{
+    width:100%;
+}
+
+
+
+
+.des{
+    width:100%;
+    /* margin-top:-1.4rem; */
+    background:transparent;
+    /* Use glassmorphism */
+    height:5rem;
+    line-height:9rem;
+    text-align: center;
+}
+.des h1{
+   color:#221660;
+   border-radius:10px;
+   /* box-shadow:0 0 1.5rem #62D0A0; */
+   font-size:50px;
+   font-family:serif;
+}
+
+
+.aboutUs img{
+    width:600px;
+    border-radius:300px;
+    margin-top:100px;
+}
+
+.aboutUs{
+    padding:8rem 9% 2rem; 
+    display: flex;
+}
+.write{
+    padding:8rem 9% 2rem;
+    
+}
+.write h1{
+    color: #221660;
+    font-weight: 900;
+    font-size:38px;
+    font-family: serif;
+    transition: 2s ease;
+}
+.write h1:hover{
+    font-size:40px;
+    cursor: pointer;
+    text-decoration: underline;
+    text-decoration-color: #62D0A0;
+}
+.write p{
+    font-size:20px;
+}
+
+.mission{
+    padding:8rem 9% 2rem; 
+    display: flex;
+} 
+.mission img{
+    width:600px;
+    border-radius:300px;
+
+}
+
+.writ{
+    padding:8rem 9% 2rem;
+    
+    /*Comeback here for finetune  */
+}
+.writ h1{
+    color: #221660;
+    font-weight: 900;
+    font-size:40px;
+    font-family: serif;
+    transition: 2s ease;
+}
+.writ h1:hover{
+    font-size:40px;
+    cursor: pointer;
+    text-decoration: underline;
+    text-decoration-color: #62D0A0;
+}
+.writ p{
+    font-size:20px;
+}
+.story h1{
+    text-align: center;
+}
+.story p{
+    text-align: center;
+    padding:8rem 9% 2rem;
+}
+
+
+.services h1{
+    text-align: center;
+    color:#221660;
+    font-size:50px;
+    font-family:serif;
+
+}
+
+
+.services-container{
+    margin-right: 250px;
+    margin-left: 250px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap:wrap;
+    gap:2rem;
+}
+
+.services-container .services-box {
+    flex:1 1 30rem;
+    background:white;
+    padding:3rem 2rem 4rem;
+    border-radius:5rem;
+    text-align: center;
+    border: .2rem solid rgb(8,22,45);
+    background: url(./Image:port/Cities_Home_Img2x.webp);
+    margin-bottom: 3rem;
+    transition: .5s ease;
+}
+#box-one{
+    background: url(./Image:port/urban-planners.webp);  
+}
+ #box-two{
+    background: url(./Image:port/pexels-ingo-joseph-13781.jpg);
+    background-size:600px;
+}
+#box-three{
+    background: ;
+}
+
+
+
+.services-container .services-box:hover{
+    border-color: blue;
+    transform:scale(1.02);
+    background-color:grey;
+    ;
+}
+.services-box i{
+    font-size: 7rem;
+    color: rgb(8,22,45);
+}
+.services-box h3{
+    font-size: 2.6rem; 
+    color:white;
+}
+ .services-box p{
+    color:white;
+    font-size:1.6rem;
+    margin:1rem 0 3rem;
+     text-align: center;
+ }
+
+
+
+
+
+.service-layer h3  {
+    font-size:30px;
+    color: #221660;
+    text-align: center;
+    /* margin-top:300px; */
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
+}
+
+
+
+.service-layer p{
+    font-size:25px;
+    color: white;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.service-layer a{
+    color:white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;  
+}
+.service-layer .serv{
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    margin-left:460px;
+}
+.our-story{
+    width:100%;
+    padding:8rem 9% 2rem;
+    background:#E8E9EB;
+}
+.card{
+    width:100%;
+    padding:8rem 9% 2rem;
+    background:#edc0bf;
+    background:linear-gradient(90deg,#edc0bf 0 ,#c4caef 58%);
+    border-radius:9rem;
+}
+
+
+
+
+
+footer{
+    width:100%;
+    margin-top:20rem;
+    padding:8rem 9% 2rem;
+    background:#221660;
+    font-family: serif;
+}
+.footer .logo{
+    color:#FFFF;
+    font-size:3rem;
+    margin-left:-4rem;
+    cursor:pointer;
+}
+.footer {
+    /* display: flex; */
+    justify-content:space-around;
+
+}
+.f1{
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer a{
+  display:inline-flex;
+  justify-content: center;
+  align-items: center;
+  width:4rem;
+  height:4rem;
+  background:transparent;
+  color:#E8E9EB; 
+  border-radius:50%;
+  font-size:2rem;
+  transition: 5s ease;     
+}
+
+.social-media a:hover{
+ background:#62D0A0;
+ border:rgb(8,22,45);
+ box-shadow:0 0 1rem rgb(8,22,45);
+}
+
+.f2{
+    display:flex;
+    justify-content: space-between;
+    padding:8rem 9% 2rem;
+    
+}
+ul{
+    list-style: none;
+}
+
+.oo1 h1{
+    color:#62D0A0;
+}
+
+
+ul li a{
+    white-space: nowrap;
+    color:white;
+    
+}
+
+.oo1 li a{
+    font-family: serif;
+    display: inline-block;
+    padding-right: 2px; 
+}
+.oo1 li a:hover{
+    color:#62D0A0;
+    font-size:2.5rem;
+}
+.oo1 p{
+font-family: serif;
+  color:white;
+  font-size:1rem;  
+}
+
+.down{
+    width: 100%;
+    background:#62D0A0;
+    display: flex;
+    justify-content: space-around;
+    border-radius:10rem;
+}
+.down h2{
+    margin-top: 3rem;
+}
+
+.btc{
+    display: inline-block;
+    padding:1rem 2.8rem;
+    background:#221660;
+    border-radius:4rem;
+    box-shadow:0 0 1.5rem;
+    font-size: 1.6rem;
+    color:white;
+    margin-top:2rem; 
+    margin-bottom:2rem; 
+}
+.btc:hover{
+    box-shadow:0 0 1.5rem #62D0A0;
+    border-radius:5rem;
+}
+
+
+.btn{
+    display: inline-block;
+    padding:1rem 2.8rem;
+    background:#221660;
+    border-radius:4rem;
+    box-shadow:0 0 1.5rem;
+    font-size: 1.6rem;
+    color:white;
+    margin-top:2rem;
+}
+.btn:hover{
+    box-shadow:0 0 1.5rem #62D0A0;
+    border-radius:5rem;
+}
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+ @media(max-width: 1200px){
+        html{
+            font-size:55%;
+        } 
+      
+    }
+    
+    @media (max-width:991px){
+         header{ 
+         padding: 2rem 3%;   
+        } 
+       
+        .search-bar{
+            border:1px solid #221660;
+            background:#E8E9EB;
+            border-radius:10rem;
+            width:40%;
+            height:70px;
+           }
+           
+           .hom{
+            width:100%; 
+            min-height:100vh;
+            background: url(../Portfolio/Image:port/pexels-pixabay-255527.jpg) no-repeat;
+            background-size:100%; 
+            /* background: #E8E9EB; */
+           
+            }
+           
+           .ad{
+            padding:8rem 9% 2rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center; 
+        }
+        .ad h1{
+            font-size:30px ;
+            font-weight:30px;
+            color:#62D0A0;
+            text-align: center;
+            letter-spacing:0.8rem;
+            margin-bottom:2rem;
+        } 
+        .ad h2{
+            font-size:20px;
+            color:#221660;
+            margin-bottom:2rem;
+            margin-top:-2rem;
+            line-height:25px; 
+        }
+     
+      .sep {
+        display: flex;
+        flex-direction:row;
+        padding:15rem 9% 2rem;   
+      }
+
+       .app i{
+        color:white;
+        height:50px;
+        width:100px;
+      } 
+
+
+      .about{
+        width:100%;
+    }
+    
+    
+    
+    
+    
+    .aboutUs img{
+        width:500px;
+        border-radius:300px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    
+    .aboutUs{
+        padding:8rem 9% 2rem; 
+        text-align:left;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .write{
+        padding:8rem 9% 2rem;
+       
+    }
+    .write h1{
+        color: #221660;
+        font-weight: 900;
+        font-size:30px;
+        text-align: center;
+        transition: 2s ease;
+        font-family: serif;
+    }
+    
+    
+    .center a{
+       display: block;
+       text-align:center;
+    
+   }
+
+    
+    .mission{
+        padding:8rem 9% 2rem; 
+        display: flex;
+        flex-direction:column;
+
+    } 
+    .mission img{
+        width:500px;
+        border-radius:300px;
+        margin-right: auto;
+        margin-left: auto;
+    
+    }
+    
+
+    .writ h1{
+        font-size:40px;
+        text-align:center;
+    }
+    .writ p{
+        text-align: justify;
+    }
+     .services {
+         margin-top:20rem;
+     }
+     .services h1{
+         margin-bottom:5rem;
+     }
+     .services-box {
+       width:rem;
+       margin-right: auto;
+       margin-left: auto;
+    }
+
+    } 
+    @media (max-width:768px){
+
+      #menu-icon{
+        display:block;
+        
+    }
+  
+    
+       .nav{
+        position:absolute;
+        top: 100%;
+        left:0;
+        width:100%;
+         padding: 1rem 3%; 
+        background:#221660;
+        color:white;
+        font-size:1.5rem;
+        cursor:pointer;
+        transition: 1s  ease; 
+        display:none; 
+        }
+        .nav.home{
+            display:block;
+        } 
+         .nav a{
+            display: block;
+            font-size: 2rem;
+        }
+
+        .apart button {
+            display:block;
+        }  
+
+
+        .hom{
+            width:100%; 
+            min-height:100vh;
+            background: url(../Portfolio/Image:port/pexels-pixabay-255527.jpg) no-repeat;
+            background-size:100%;
+           background-color:#E8E9EB;
+            }
+           .content{
+            padding:8rem 9% 2rem; 
+            display: flex;
+            justify-content: center;
+            text-align: center; 
+           }
+           .search-bar{
+            border:1px solid #221660;
+            background:#E8E9EB;
+            border-radius:10rem;
+            width:80%;
+            height:70px;
+           }
+           .search-bar input{
+            background:transparent;
+             padding: 2rem 0 1rem 1.8rem; 
+             margin: 3rem 0 2rem -2rem;
+            border-radius: 3rem;
+            outline: none;
+            
+           }
+            .search-bar button{
+                background:transparent;
+                margin-left:3rem;
+                border-radius:100px;
+                cursor: pointer;
+            }
+             #im{
+                width:30px;
+                margin-top:20px;
+            }
+            html{
+                font-size:62.5%;
+                overflow-x: hidden;
+            }
+            .ad{
+                padding:8rem 9% 2rem;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center; 
+          
+            }
+            .ad h1{
+                color:#62D0A0;
+                text-align: center;
+                letter-spacing:0.8rem;
+                margin-bottom:2rem;
+            } 
+            .ad h2{
+                color:#221660;
+                margin-bottom:2rem;
+                line-height:30px; 
+            }
+         .ad a{
+            display: inline-block;
+           }
+        
+            .ad button{
+             margin-right:30px;
+             padding:0.7rem;    
+             background:;
+             border-radius:20px;
+             margin-bottom: 3rem;
+            }
+            .ad button:hover{
+                cursor: pointer;
+                
+        }
+        .one button{
+            width:20rem;
+            
+         }
+         button .xl{
+           padding-top: 3rem;
+           text-align: center;
+        }
+
+          .sep {
+            display: flex;
+            flex-direction: column;
+            padding:8rem 9% 2rem;   
+          }
+
+          .app i{
+            color:white;
+        
+            height:50px;
+        }
+       
+        .about{
+            width:100%;
+        }
+        
+        
+        
+        
+        
+        .aboutUs img{
+            width:300px;
+            border-radius:300px;
+            margin-top:100px;
+        }
+        
+        .aboutUs{
+            padding:8rem 9% 2rem; 
+            text-align:left;
+            display: flex;
+            flex-direction: column;
+        }
+        .write{
+            padding:8rem 9% 2rem;
+           
+        }
+        .write h1{
+            color: #221660;
+            font-weight: 900;
+            font-size:30px;
+            text-align: center;
+            transition: 2s ease;
+            font-family: serif;
+        }
+        .write h1:hover{
+            font-size:33px;
+            cursor: pointer;
+            text-decoration: underline;
+            text-decoration-color: #62D0A0;
+        }
+        .write p{
+            text-align:justify;
+            font-size:20px;
+        }
+        
+        .center a{
+           display: block;
+           text-align:center;
+       }
+        
+        .mission{
+            padding:8rem 9% 2rem; 
+            display: flex;
+            flex-direction:column-reverse;
+
+        } 
+        .mission img{
+            width:300px;
+            border-radius:300px;
+        
+        }
+        
+
+        .writ h1{
+            font-size:40px;
+            text-align:center;
+        }
+        .writ p{
+            text-align: justify;
+        }
+       
+        .services h1{
+            font-family: serif;
+
+        }
+        
+        
+        .des h1{
+            margin-top: 5rem;
+            font-family: serif;
+
+        }
+        .services-container{
+            width:100%;
+            padding:8rem 9% 2rem;
+            margin:auto;
+            justify-content: center;
+            align-items: center;
+            flex-wrap:wrap;
+            gap:2rem; 
+        }
+
+        
+        .services-container .services-box{
+            flex:1 1 30rem;
+            background:white;
+            padding:3rem 2rem 4rem;
+            border-radius:5rem;
+            text-align: center;
+            border: .2rem solid rgb(8,22,45);
+            /* background: url(./Image:port/Cities_Home_Img2x.webp); */
+            margin-bottom: 3rem;
+            transition: .5s ease;
+        }
+        .services-container .services-box:hover{
+            border-color: blue;
+            transform:scale(1.02);
+            background-color:#62D0A0;
+            ;
+        }
+        .services-box i{
+            font-size: 7rem;
+            color: rgb(8,22,45);
+        }
+        .services-box h3{
+            font-size: 2.6rem; 
+            color;
+        }
+         .services-box p{
+            color:;
+            font-size:1.6rem;
+            margin:1rem 0 3rem;
+             text-align: center;
+         }
+         .f1{
+            display: flex;
+            justify-content: space-around;
+            flex-direction: column;
+            text-align: center;
+        }
+        .oo1 {
+            margin:1.3rem;
+            margin-right:0;
+            padding-left: 0;
+        }
+
+        
+       
+        
+       
+        
+        
+
+
+
+
+        
+     
+    }
+      
+      
+        
+     @media(max-width: 617px){
+        
+
+       }
+    
+    @media (max-width: 450px){
+        html{
+            font-size: 50%;
+        }
+    
+    }
+    @media (max-width:365px){
+       .mission img{
+           width: 90vw;
+       }
+
+    } 
